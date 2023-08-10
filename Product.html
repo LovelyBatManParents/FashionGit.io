@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" href="images/Logo.png">
+    <title>FashionGit</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="FashionGif.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <!-- Header Section -->
+
+    <header>
+      <!-- nav -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/Logo.png" id="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="HomePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="About Us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" id="cart-icon">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+         <!-- Cart-->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Content -->
+            <div class="cart-content">
+              
+            </div>
+            <!-- Total -->
+            <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">$0</div>
+            </div>
+            <!-- Buy Button -->
+            <a href="paymentPage.html"><button type="button" class="btn-buy">Buy Now</button></a>
+            <!-- Cart Close -->
+            <i class='bx bx-x' id="close-cart"></i>
+        </div>
+      </div>
+    </header>   
+
+    <!-- Shop -->
+    <section class="shop container">
+      <h2 class="section-title">Shop Products</h2>
+      <div class="container mt-4" id="dropbox">
+        <select id="pageSelect" class="form-control">
+          <option value="">Select Page</option>
+          <option value="Product.html">Hawiian</option>
+          <option value="Product1.html">Anime X Hawiian</option>
+          <option value="Product3.html">Anime Hoodies</option>
+        </select>
+      </div>
+      <!-- Content -->
+      <div class="shop-content">
+        <!-- Box 1 -->
+        <div class="product-box">
+          <a href="ProductDetail1.html"><img src="images/product1.jpg" class="product-img" id="fifth" onmouseover="document.getElementById('fifth').src='images/Product2.jpg'"onmouseout="document.getElementById('fifth').src='images/product1.jpg'"></a>
+          <h4 class="product-title">JUNGLE BIRD - RED</h4>
+          <span class="price">$74</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 2 -->
+        <div class="product-box">
+          <img src="images/product3.webp" alt="" class="product-img" id="sixth" onmouseover="document.getElementById('sixth').src='images/Product32.jpg'"onmouseout="document.getElementById('sixth').src='images/product3.webp'">
+          <h4 class="product-title">STAR ORCHID - BLACK</h4>
+          <span class="price">$70</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 3 -->
+        <div class="product-box">
+          <img src="images/product4.webp" alt="" class="product-img" id="seventh" onmouseover="document.getElementById('seventh').src='images/Product31.jpg'"onmouseout="document.getElementById('seventh').src='images/product4.webp'">
+          <h4 class="product-title">PARADISE PANEL - RED</h4>
+          <span class="price">$64</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 4 -->
+        <div class="product-box">
+          <img src="images/Product4.jpg" alt="" class="product-img" id="eigth" onmouseover="document.getElementById('eigth').src='images/Product33.jpg'"onmouseout="document.getElementById('eigth').src='images/Product4.jpg'">
+          <h4 class="product-title">CABANA PALMS - NAVY</h4>
+          <span class="price">$65</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 5 -->
+        <div class="product-box">
+          <img src="images/Product5.jpg" alt="" class="product-img" id="nine" onmouseover="document.getElementById('nine').src='images/Product33.jpg'"onmouseout="document.getElementById('nine').src='images/Product5.jpg'">
+          <h4 class="product-title">WATERCOLOR HIBISCUS - PURPLE</h4>
+          <span class="price">$80</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 6 -->
+        <div class="product-box">
+          <img src="images/Product19.webp" alt="" class="product-img">
+          <h4 class="product-title">MAGNUM BAMBOO - PURPLE</h4>
+          <span class="price">$40</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 7 -->
+        <div class="product-box">
+          <img src="images/Product20.webp" alt="" class="product-img" id="tenth" onmouseover="document.getElementById('tenth').src='images/Product34.jpg'"onmouseout="document.getElementById('tenth').src='images/Product5.jpg'">
+          <h4 class="product-title">OHIA - NAVY</h4>
+          <span class="price">$55</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 8 -->
+        <div class="product-box">
+          <img src="images/Product21.webp" alt="" class="product-img" id="eleventh" onmouseover="document.getElementById('eleventh').src='images/Product35.jpg'"onmouseout="document.getElementById('eleventh').src='images/Product21.webp'">
+          <h4 class="product-title">HILO - WHITE</h4>
+          <span class="price">$100</span>
+          <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+      </div>
+    </section>
+   
+      
+    <!-- Footer Section -->
+    <footer class="footer mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2023 FashionGit Website. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-right">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+              <li class="list-inline-item"><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer> 
+
+    <!-- Add Bootstrap JS and jQuery links here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      // Function to handle the dropdown change event
+      function handleChange() {
+        var selectedValue = document.getElementById("pageSelect").value;
+        if (selectedValue) {
+          window.location.href = selectedValue
+        }
+      }
+      
+      // Attach the handleChange function to the dropdown change event
+      document.getElementById("pageSelect").addEventListener("change", handleChange);
+      </script>
+      
+</body>
+</html>

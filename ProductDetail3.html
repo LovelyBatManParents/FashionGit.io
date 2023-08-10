@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" href="images/Logo.png">
+    <title>FashionGif</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="FashionGif.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/Logo.png" id="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="HomePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="About Us.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body Section -->
+    <section id="productdetail">
+        <div class="single-image">
+            <img src="images/Product18.webp" width="80%" id="Main">
+            <div class="small-group">
+                <div class="small-img-col">
+                    <img src="images/Product18.webp" width="80%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/ProductDetail18.jpg" width="80%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/ProductDetail18.webp" width="80%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/ProductDetail19.webp" width="80%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="single-details">
+            <h6>Dream Cloak Coat / Anime</h6>
+            <h4>Goku Red Instinct Dragon Ball Z Dream Cloak Coat</h4>
+            <h5>$40.00</h2>
+            <h4>Product Detail</h4>
+            <span>
+                This FashionGif exclusive dream cloak coat is made from an ultra-soft premium microfiber fleece lining. 
+                The outside is made with a micro-mink polyester fabric that allows the print to be high definition with vibrant colors. 
+                Featuring two deep side pockets to keep your belongings safe and your hands warm.
+        
+            </span>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2023 FashionGif Website. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-right">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+              <li class="list-inline-item"><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Add Bootstrap JS and jQuery links here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        var Mainimage=document.getElementById("Main");
+        var smallimage=document.getElementsByClassName("small-img");
+
+        smallimage[0].onclick = function(){
+            Mainimage.src = smallimage[0].src;
+        }
+        smallimage[1].onclick = function(){
+            Mainimage.src = smallimage[1].src;
+        }
+        smallimage[2].onclick = function(){
+            Mainimage.src = smallimage[2].src;
+        }
+        smallimage[3].onclick = function(){
+            Mainimage.src = smallimage[3].src;
+        }
+    </script>
+
+
+</body>
+</html>

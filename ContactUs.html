@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" href="images/Logo.png">
+    <title>FashionGit</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="FashionGif.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+      <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/Logo.png" id="Logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link text-dark" href="HomePage.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark" href="Product.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark" href="Login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark" href="About Us.html">About Us</a>
+                  </li>
+              </ul>
+
+          </div>
+      </div>
+  </nav>
+    <div class="container">
+        <h1>"I am not alone. I can hear them…"</h1>
+        <p>Welcome to our shop! Pls Feel Free to Let Us Know Your Opinions</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Locations</h2>
+                <ul>
+                    <li>New York</li>
+                    <li>Los Angeles</li>
+                    <li>Chicago</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Phone Numbers</h2>
+                <ul>
+                    <li>Customer Support: +1 123-456-7890</li>
+                    <li>Sales: +1 987-654-3210</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <h1 class="text-center" id="header">Contact Us</h1>
+                <form id="contactForm" action="submit_form.php" method="POST">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                  </div>
+                  <div class="super">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+              <!-- Thank You Message -->
+              <div id="thankYouMessage" style="display: none; text-align: center; margin-top: 20px;">
+                <h2>Thank You For Submitting!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer mt-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>&copy; 2023 FashionGit Website. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                    <li class="list-inline-item"><a href="ContactUs.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </footer>
+    <!-- Add Bootstrap JS and jQuery links here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Function to show the "Thank You" message
+        function showThankYouMessage() {
+          document.getElementById('thankYouMessage').style.display = 'block';
+          document.getElementById('contactForm').style.display = 'none';
+          document.getElementById('header').style.display = 'none';
+        }
+      
+        // Attach event listener to the submit button
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission to a server (for demonstration purposes)
+          showThankYouMessage();
+        });
+      </script>
+</body>
+</html>

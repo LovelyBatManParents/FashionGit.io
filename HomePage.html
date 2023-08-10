@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" href="images/Logo.png">
+    <title>FashionGit</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="FashionGif.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-4" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/Logo.png" id="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="HomePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="About Us.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body Section -->
+    <div class="container mt-4">
+        <div id="banner">
+            <img src="images/Banner1.jpg" id="banner">          
+        </div>
+    </div>
+    <h1 align="center">Featured Products</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/FeaProduct1.webp" id="first" class="card-img-top smooth-transition" onmouseover="document.getElementById('first').src='images/Product27.jpg'"onmouseout="document.getElementById('first').src='images/FeaProduct1.webp'">
+            <div class="card-body">
+              <h5 class="card-title">$39.00</h5>
+              <p class="card-text">Naruto Akatsuki Button Up Hawaiian Shirt</p>
+            </div>
+            <div class="card-footer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="images/FeaProduct2.webp" class="card-img-top" id="second" class="card-img-top smooth-transition" onmouseover="document.getElementById('second').src='images/Product28.jpg'"onmouseout="document.getElementById('second').src='images/FeaProduct2.webp'">
+            <div class="card-body">
+              <h5 class="card-title">$39.00</h5>
+              <p class="card-text">Pride Fullmetal Alchemist Soccer Jersey</p>
+            </div>
+            <div class="card-footer">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </div>
+      <div class="col">
+          <div class="card h-100">
+            <img src="images/FeaProduct3.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">$54.00</h5>
+              <p class="card-text">One Piece Straw Hat Pirates Christmas Ugly Christmas Sweater.</p>
+            </div>
+            <div class="card-footer">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <div class="col">
+          <div class="card h-100 ">
+            <img src="images/FeaProduct4.webp" class="card-img-top" id="third" class="card-img-top smooth-transition" onmouseover="document.getElementById('third').src='images/Product29.jpg'"onmouseout="document.getElementById('third').src='images/FeaProduct4.webp'">
+            <div class="card-body">
+              <h5 class="card-title">$39.00</h5>
+              <p class="card-text">Black Aloha Akatsuki Naruto Button Up Hawaiian Shirt</p>
+            </div>
+            <div class="card-footer">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/FeaProduct5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">$54.00</h5>
+              <p class="card-text">Pokemon Kanto Starters Ugly Christmas Sweater</p>
+            </div>
+            <div class="card-footer">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/FeaProduct6.webp" class="card-img-top" id="fourth" class="card-img-top smooth-transition" onmouseover="document.getElementById('fourth').src='images/Product30.jpg'"onmouseout="document.getElementById('fourth').src='images/FeaProduct6.webp'">
+            <div class="card-body">
+              <h5 class="card-title">$54.00</h5>
+              <p class="card-text">Christmas Nezuko Kamado Demon Slayer Ugly Christmas Sweater</p>
+            </div>
+            <div class="card-footer">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="clickAction">
+        <h4>Services</h4>
+        <h1>Up To 70% Off</h1>
+      </section>
+    <!-- Footer Section -->
+    <footer class="footer mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2023 FashionGit Website. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-right">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+              <li class="list-inline-item"><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
